@@ -32,7 +32,7 @@ Additionally, it is recommended to have a terminal multiplexer installed, as som
 ##Configuration Restoration
 
 Configuration files are restored from a folder named "configs" that is stored in the same directory as the script. The directory structure is shown below. Notice that within the configs directory, there is a directory for cron, a directory for php-fpm, a regular file for iptables, and a tarball for nginx configs. The method used by this script to restore files should be fairly obvious by looking at the code.
-
+`
 .
 ├── configs
 │   ├── cron
@@ -45,7 +45,7 @@ Configuration files are restored from a folder named "configs" that is stored in
 │       ├── php-fpm.conf
 │       └── www.conf
 └── webRebuild.sh
-
+`
 It should be noted that the script doesn't just restore the nginx configs. It will also set the server_name directive in all of the /etc/nginx/sites-available files to include the IP address of the server. This works well on my single-website configurations. However, it may not be desirable for some configurations with multiple sites, and you may wish to remove this section of the script.
 
 ##Logging
