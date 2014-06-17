@@ -55,11 +55,11 @@ When executed, the script attempts to create a base directory for logging. By de
 
 The script also logs realtime to the console. There are two types of messages: Notice and Error. Both follow the format of:
 
-[MESSAGE_TYPE] MESSAGE
+`[MESSAGE_TYPE] MESSAGE`
 
 For example:
 
-[ERROR] Problem installing package.
+`[ERROR] Problem installing package.`
 
 Notice messages are logged to stdout, while error messages are logged to STDERR. As much as possible, the script attempts to simply skip over non-critical problems and simply log them with an [ERROR] message.
 
