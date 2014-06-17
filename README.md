@@ -3,23 +3,23 @@ This is a bash script for rebuilding a web server. I built this because occasion
 This script has been tested on CentOS 6.5.
 
 The script performs the following tasks:
-	1. Changes the box hostname (persistent)
-	2. Updates /etc/issue for the SSH banner
-	3. Installs updates with yum
-	4. Installs several other programs and services, adding repos as needed:
-		* fail2ban
-		* clamAV
-		* clamd
-		* nginx
-		* MariaDB (server and client)
-		* php-fpm
-		* tmpwatch
-		* ntpd
-		* ntpdate
-	5. Turns on appropriate services at reboot via chkconfig
-	6. Restores configuration files from backup copies (see more below)
-	7. Downloads and installs (unzips) Wordpress to the appropriate directory
-	8. Adds a regular user
+1. Changes the box hostname (persistent)
+2. Updates /etc/issue for the SSH banner
+3. Installs updates with yum
+4. Installs several other programs and services, adding repos as needed:
+	* fail2ban
+	* clamAV
+	* clamd
+	* nginx
+	* MariaDB (server and client)
+	* php-fpm
+	* tmpwatch
+	* ntpd
+	* ntpdate
+5. Turns on appropriate services at reboot via chkconfig
+6. Restores configuration files from backup copies (see more below)
+7. Downloads and installs (unzips) Wordpress to the appropriate directory
+8. Adds a regular user
 
 ##Before Running
 
