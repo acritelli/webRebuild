@@ -3,6 +3,7 @@ This is a bash script for rebuilding a web server. I built this because occasion
 This script has been tested on CentOS 6.5.
 
 The script performs the following tasks:
+
 1. Changes the box hostname (persistent)
 2. Updates /etc/issue for the SSH banner
 3. Installs updates with yum
